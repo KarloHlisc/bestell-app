@@ -84,6 +84,16 @@ footer{
     align-items: center;
 }
 
+.btn{
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+}
+.btn:hover{
+    background-color: #ff8000;
+}
+
 @media (max-width:800px) {
     .basket_wrapper{
         display: none;
@@ -98,3 +108,4 @@ footer{
     color: wheat;
 }
 }
+
