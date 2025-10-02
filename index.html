@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/standard.css">
     <script src="./scripts/db.js"></script>
+    <link rel="stylesheet" href="./styles/basket.css">
 </head>
 <body onload="init()">
     <header>
@@ -82,13 +83,42 @@
      
 
     <section class="basket_wrapper">
-        <div class="basket">basket</div>
+        <div class="basket"><h2 class="basket-name">Warenkorb</h2>
+            <div class="basket-title">
+                <h2 class="basket-name">Name Basket</h2>
+            </div>
+            <div class="basket-items">
+                <h3 class="product-name">Product Name</h3>
+                <div class="product-amount">
+                    <button id="btn-product-decrease" onclick="" class="btn">-</button>
+                    <span id="product-number" class="product-number">0</span>
+                     <button id="btn-product-increase" onclick="" class="btn">+</button>
+                     <span id="product-costs" class="product-costs">0</span>
+                     <button id="btn-product-delete" onclick="" class="btn">D</button>
+                </div>
+            </div>
+                <div class="check-out">
+                    <div class="zwischensume">
+                        <p class="zwischen-sume-name">Zwischensumme</p>
+                        <p class="zwischen-sume-num">0 €</p>
+                    </div>
+                    
+                    <div class="lieferkosten">
+                        <p class="lieferkosten-name">Lieferkosten</p>
+                        <p class="lieferkosten-num">0 €</p>
+                    </div>
+                    <div class="sume">
+                        <p class="sum-sume-name"><strong>Gesamt</strong></p>
+                        <p class="sum-sume-num"><strong>0 €</strong></p>
+                    </div>
+                </div>
+        </div>
     </section>
     
    </div> 
     </main>
     <footer>
-
+                <p>Footer</p>
     </footer>
     <script src="./scripts/template.js"></script>
     <script src="script.js"></script>
