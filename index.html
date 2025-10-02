@@ -3,25 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/Favicon/favicon.ico" type="image/x-icon">
     <title>Bestellapp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles/standard.css">
+    <script src="./scripts/db.js"></script>
 </head>
-<body>
+<body onload="init()">
     <header>
         <div id="bestellapp-img">
             <img src="./img/Logo/Bestell App- Logo.svg" alt="" id="title-logo">
         </div>
     </header>
     <main>
+<!--
         <div class="container-food">
             <h1>Bestellapp</h1>
     <p>Bestellen Sie jetzt!</p>
+           </div>
+            
+-->
+    <div class="content_wrapper">     
+    <section class="content">
+    <div id="test_content">
+        <div class="title-image">
+            <img id="image-titel" src="./img/images/271_italian_pizza_30.avif" alt="">
+            <div class="overley-image">
+            <img id="image-over-image" src="./img/Favicon/favicon-32x32.png" alt="logo">
+            </div>
+        </div>
+
+        <div class="bestellapp-title">
+                <h1 class="title-h1">Spagetti Restorante</h1>
+                <p class="bewertung-restirant">Bewertung (4,2 von 5 Sternen)</p>
+            </div>
+
+            <div class="nav-food-slider">
+                <nav>
+                    <a href="default.asp">Hauptgericht</a>
+                    <a href="default.asp">Beilage</a>
+                   <a href="default.asp">Getranke</a>
+                </nav>
+            </div>
+
+            <section class="menu-section">
+        <div class="menu-category-food">
+            <div class="category-food-title">
+                <img id="category-food-img" src="./img/images/271_italian_pizza_30.avif" alt="">
+                <h2 class="title-category" id="title-category-${index}">Hauptgerich</h2>
+            </div>
+        <div class="food-box-display" id="food-box-display">
+<!--
+            <div class="food-name-section">
+                <h3 id="food-name-${index}">Pizza</h3>
+                <button id="btn-add-food-${index}" class="btn-add-food">+</button>
+            </div>
+            <p class="food-description" id="food-description">gdjfj</p>
+            <p class="food-price" id="food-price">16.6€</p>
+-->
+        </div>
+        
     </div>
+
+     <div class="menu-category-drink">
+            <div class="category-drink-title">
+                <img id="category-drink-img" src="./img/images/soda-4344575_1280-270.jpg" alt="">
+                <h2 class="title-category" id="title-category-${index}">Getrank</h2>
+            </div>
+       <div class="drink-box-display" id="drink-box-display"></div>
+        </div>
+    </section>
+
+    </div>
+    <div class="warenkorb-btn">
+    <button id="warenkorb">Warenkorb</button>
+    </div>
+    </section>
+     
+
+    <section class="basket_wrapper">
+        <div class="basket">basket</div>
+    </section>
+    
+   </div> 
     </main>
     <footer>
 
     </footer>
+    <script src="./scripts/template.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
