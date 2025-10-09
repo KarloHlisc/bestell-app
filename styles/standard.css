@@ -11,7 +11,11 @@ html, body{
 }
 */
 body{
-    max-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
 }
 header{
     box-shadow: 0 4px 2px -2px gray;
@@ -20,6 +24,7 @@ header{
     display: flex;
     justify-content: start;
     flex-direction: row;
+    width: 100%;
     
 }
 /*
@@ -32,6 +37,10 @@ main{
     
 }
 */
+
+main{
+    max-width: 1920px;
+}
 .content_wrapper{
     gap: 2px;
     padding: 2px;
@@ -73,6 +82,7 @@ main{
 footer{
     height: 100px;
     background-color: #f0ece6;
+    width: 100%;
 }
 #warenkorb{
     display: none;
