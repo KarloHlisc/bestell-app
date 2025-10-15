@@ -13,7 +13,6 @@ html, body{
 body{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     
 }
@@ -66,14 +65,13 @@ main{
 #test_content{
     padding: 32px;
     font-size: 48px;
-   /* height: 1500px; */
     width: 100%;
-    background-color: #124658;
+    background-color: #fdfdfb;
 }
 .basket{
     width: 100%;
     height: 400px;
-    background-color: #124658;
+    background-color: #fdfdfb;
     position: sticky;
     top: 0;
 
@@ -117,5 +115,7 @@ footer{
     background-color: #ff8000;
     color: wheat;
 }
+#test_content {
+    padding: 8px;
 }
-
+}
